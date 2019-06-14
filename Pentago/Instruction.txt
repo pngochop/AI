@@ -1,0 +1,37 @@
+Program Instructions:
+
+Load Main.java, GameBoard.java, AI.java into your workspace.
+
+Starting a Game: 
+	- Run "Main.java"
+	- Enter your name.
+	- Select a color to play ('w', 'W', 'b', or 'B')
+	- Program will randomly select Player or Computer to play first.
+	
+Inputting Moves:
+	- Move format
+		[Block]/[Position] [Block][Direction]
+		For example: 1/1 1L or 1/1 2R
+   Block 1  Block 2
+   +-------+-------+ 	 +-------+-------+
+   | 1 2 3 | 1 2 3 | 	 | . . . | . . . |
+   | 4 5 6 | 4 5 6 | 	 | . . . | . . . |
+   | 7 8 9 | 7 8 9 | 	 | 1 . . | . . . |
+   +-------+-------+ 	 +-------+-------+
+   | 1 2 3 | 1 2 3 | 	 | . . . | . . . |
+   | 4 5 6 | 4 5 6 | 	 | . . . | . . . |
+   | 7 8 9 | 7 8 9 | 	 | . . . | . . . |
+   +-------+-------+ 	 +-------+-------+
+   Block 3  Block 4      After move 1/1 1L 
+   
+	- RotateBlock - 3x3 Block 1, 2, 3, or 4 to rotate after placing element
+
+	- Direction - Direction to rotate block ('r', 'R', 'l', or 'L')
+
+Adjusting AI settings:
+	- Adjuste Depth limit by modifying the DEPTH Main.java
+		Higher Depth level smater AI.
+	- Adjuste ALPHA_BETA to True or flase to change AI searching method.
+		AI will do Alpha-Beta algorithm if value of ALPHA_BETA = true, otherwise Min-Max algorithm will be selected.
+
+	
